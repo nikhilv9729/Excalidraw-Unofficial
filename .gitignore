@@ -1,0 +1,14 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+.env
+.env.*
+!.env.example
+*.key
+*.pfx
+*.p12
+*.cer
+*.log
+.DS_Store
+Thumbs.db

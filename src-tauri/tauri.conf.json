@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Excalidraw Desktop (Unofficial)",
+  "version": "0.18.1",
+  "identifier": "com.excalidraw.unofficial.desktop",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Excalidraw Desktop",
+        "width": 1280,
+        "height": 820,
+        "minWidth": 760,
+        "minHeight": 520,
+        "zoomHotkeysEnabled": true,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' asset: data: blob: https:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' ipc: http://ipc.localhost https://github.com https://api.github.com https://objects.githubusercontent.com"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis", "msi"],
+    "createUpdaterArtifacts": false,
+    "category": "Productivity",
+    "shortDescription": "An unofficial offline-first desktop client for Excalidraw",
+    "longDescription": "A lightweight Windows desktop client powered by the official open-source Excalidraw editor.",
+    "copyright": "Excalidraw is copyright its respective contributors.",
+    "fileAssociations": [
+      {
+        "ext": ["excalidraw"],
+        "name": "Excalidraw drawing",
+        "description": "Excalidraw drawing",
+        "role": "Editor",
+        "mimeType": "application/vnd.excalidraw+json"
+      }
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "displayLanguageSelector": false
+      }
+    }
+  }
+}
