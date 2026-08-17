@@ -1,3 +1,2 @@
 # Excalidraw unofficial
-Excalidraw unofficial desktop installer with latest updates
-In discussion with Excalidraw to launch the official windows installer application
+Unofficial offline-first Windows desktop client powered by the official Excalidraw editor and Tauri
