@@ -28,7 +28,10 @@
   },
   "bundle": {
     "active": true,
-    "targets": ["nsis", "msi"],
+    "targets": [
+      "nsis",
+      "msi"
+    ],
     "createUpdaterArtifacts": false,
     "category": "Productivity",
     "shortDescription": "An unofficial offline-first desktop client for Excalidraw",
@@ -36,7 +39,9 @@
     "copyright": "Excalidraw is copyright its respective contributors.",
     "fileAssociations": [
       {
-        "ext": ["excalidraw"],
+        "ext": [
+          "excalidraw"
+        ],
         "name": "Excalidraw drawing",
         "description": "Excalidraw drawing",
         "role": "Editor",
